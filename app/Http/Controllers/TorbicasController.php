@@ -17,12 +17,14 @@ class TorbicasController extends Controller
             'opis'=>'required',
             'materijal'=>'required',
             'cena'=>'required',
+            'oblik'=>'required'
         ]);
         return Torbica::create([
             'model'=>request('model'),
             'opis'=>request('opis'),
             'materijal'=>request('materijal'),
-            'cena'=>request('cena')
+            'cena'=>request('cena'),
+            'oblik'=>request('oblik')
         ]);
     }
 
@@ -32,12 +34,14 @@ class TorbicasController extends Controller
             'opis'=>'required',
             'materijal'=>'required',
             'cena'=>'required',
+            'oblik'=>'required'
         ]);
         $success = $torbica -> update([
             'model'=>request('model'),
             'opis'=>request('opis'),
             'materijal'=>request('materijal'),
-            'cena'=>request('cena')
+            'cena'=>request('cena'),
+            'oblik'=>request('oblik')
         ]);
 
         return[

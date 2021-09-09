@@ -8,6 +8,6 @@ class Torbica extends Model
 {
     //use HasFactory;
     protected $fillable=[
-        'model', 'opis', 'materijal', 'cena'
+        'model', 'opis', 'materijal', 'cena', 'oblik'
     ];
 }

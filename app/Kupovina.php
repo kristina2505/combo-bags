@@ -7,6 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class Kupovina extends Model
 {
     protected $fillable=[
-        'ime', 'prezime', 'Torbica'
+        'ime', 'prezime', 'Torbica', 'email'
     ];
 }

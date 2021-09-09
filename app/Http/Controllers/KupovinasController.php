@@ -16,11 +16,13 @@ class KupovinasController extends Controller
         request()->validate([
             'ime'=> 'required',
             'prezime'=> 'required',
-            'Torbica'=> 'required'
+            'Torbica'=> 'required',
+            'email'=> 'email'
         ]);
         return Kupovina::create([
             'ime'=>request('ime'),
             'prezime'=>request('prezime'),
+            'email'=>request('email'),
             'Torbica'=>intval(request('Torbica'))
         ]);
     }
