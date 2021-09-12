@@ -3,6 +3,7 @@ use App\Torbica;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TorbicasController;
+use App\Http\Controllers\KupovinasController;
 
 /*
 |--------------------------------------------------------------------------
